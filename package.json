@@ -8,5 +8,8 @@
   },
   "author": "Daven Quinn",
   "license": "ISC",
-  "prettier": {}
+  "prettier": {},
+  "dependencies": {
+    "git-revision-webpack-plugin": "^3.0.6"
+  }
 }

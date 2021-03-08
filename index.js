@@ -1,6 +1,6 @@
-import GitRevisionPlugin from "git-revision-webpack-plugin";
+const GitRevisionPlugin = require("git-revision-webpack-plugin");
 
-export default function(pkg, githubLink) {
+module.exports = function(pkg, githubLink) {
 
   const gitRevisionPlugin = new GitRevisionPlugin({
     lightweightTags: true,
@@ -20,9 +20,9 @@ export default function(pkg, githubLink) {
   }
 
   if (githubLink != null) {
-    env.GITHUB_LINK: JSON.stringify(GITHUB_LINK)
-    env.GITHUB_REV_LINK: JSON.stringify(
-      GITHUB_LINK + "/tree/" + gitRevisionPlugin.commithash()
+    env.GITHUB_LINK = JSON.stringify(githubLink)
+    env.GITHUB_REV_LINK = JSON.stringify(
+      githubLink + "/tree/" + gitRevisionPlugin.commithash()
     )
   }
 
