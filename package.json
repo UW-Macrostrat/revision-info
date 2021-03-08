@@ -1,0 +1,12 @@
+{
+  "name": "@macrostrat/revision-info-webpack",
+  "version": "1.0.0",
+  "description": "Modules to provide revision info to user-interface applications",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Daven Quinn",
+  "license": "ISC",
+  "prettier": {}
+}
